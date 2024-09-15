@@ -1776,7 +1776,7 @@ body.dark .loader_line:after {
     clear: both;
     float: left;
     margin-bottom: 32px;
-    margin-left: 15px;
+    margin-left: 0px;
 }
 
 .iknow_tm_resume .info_list:last-child {
@@ -1822,7 +1822,7 @@ body.dark .loader_line:after {
 }
 
 .iknow_tm_resume .info_list ul {
-    margin: 28px 0 0;
+    margin: 10px 0 0;
     float: left;
     list-style-type: none
 }
