@@ -1761,6 +1761,7 @@ body.dark .loader_line:after {
     clear: both;
     display: flex;
     flex-wrap: wrap;
+    margin-right: 10px;
     /* Ensures proper alignment on smaller screens */
 
 }
@@ -1775,7 +1776,7 @@ body.dark .loader_line:after {
     clear: both;
     float: left;
     margin-bottom: 32px;
-    margin-left: 62px;
+    margin-left: 15px;
 }
 
 .iknow_tm_resume .info_list:last-child {
