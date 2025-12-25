@@ -520,6 +520,20 @@ body.dark .loader_line:after {
     transition: all .3s ease
 }
 
+.iknow_tm_button.lang_switch a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px
+}
+
+.iknow_tm_button.lang_switch .lang_icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    filter: brightness(0) invert(1)
+}
+
 .iknow_tm_button a:hover {
     background-color: #ffb324
 }
