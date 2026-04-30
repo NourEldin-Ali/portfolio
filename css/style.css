@@ -1851,6 +1851,20 @@ body.dark .loader_line:after {
     margin-bottom: 0
 }
 
+.iknow_tm_resume .info_list ul li.publication_group_title {
+    margin: 35px 0 18px
+}
+
+.iknow_tm_resume .info_list ul li.publication_group_title:first-child {
+    margin-top: 0
+}
+
+.iknow_tm_resume .info_list ul li.publication_group_title h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff451b
+}
+
 .iknow_tm_resume .info_list ul li .list_inner {
     width: 100%;
     height: auto;
