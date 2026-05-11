@@ -7156,12 +7156,25 @@ input[type=number] {
         padding-left: 33px
     }
 
+    .iknow_tm_resume .info_list ul li .short {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .iknow_tm_resume .info_list ul li .short .job {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 10px
+    }
+
     .iknow_tm_resume .info_list ul li .short .job h3 {
-        font-size: 20px
+        font-size: 20px;
+        line-height: 1.35
     }
 
     .iknow_tm_resume .info_list ul li .short .job span {
-        font-size: 18px
+        font-size: 17px;
+        line-height: 1.45
     }
 
     .iknow_tm_resume .info_list ul li .short .job h3 {
@@ -7170,7 +7183,13 @@ input[type=number] {
 
     .iknow_tm_resume .info_list ul li .short .year span {
         font-size: 18px;
-        padding: 5px 30px 4px
+        padding: 5px 20px 4px;
+        white-space: normal
+    }
+
+    .iknow_tm_resume .text p {
+        font-size: 16px;
+        line-height: 1.65
     }
 
     .progress_inner span.label {
@@ -7253,6 +7272,15 @@ input[type=number] {
 
     .iknow_tm_recommendations .recommendation_card {
         padding: 30px
+    }
+
+    .iknow_tm_recommendations .recommendation_text {
+        padding-left: 0;
+        margin-bottom: 24px
+    }
+
+    .iknow_tm_recommendations .recommendation_text:before {
+        display: none
     }
 
     .iknow_tm_recommendations .recommendation_text p {
@@ -7382,17 +7410,6 @@ input[type=number] {
 @media(max-width:480px) {
     .iknow_tm_modalbox .box_inner {
         width: 300px
-    }
-
-    .iknow_tm_resume .info_list ul li .short {
-        flex-direction: column;
-        align-items: flex-start
-    }
-
-    .iknow_tm_resume .info_list ul li .short .job {
-        width: 100%;
-        padding-right: 0;
-        margin-bottom: 10px
     }
 
     .iknow_tm_resume .info_list ul li .short .job h3 {
