@@ -175,6 +175,30 @@ body.dark .iknow_tm_testimonials .testimonials_list .list_inner .in {
     box-shadow: none
 }
 
+body.dark .iknow_tm_recommendations .recommendation_card {
+    background-color: #5b5c64;
+    border-color: #777a7f;
+    box-shadow: none
+}
+
+body.dark .iknow_tm_recommendations .recommendation_text p {
+    color: #fff
+}
+
+body.dark .iknow_tm_recommendations .recommendation_avatar {
+    background-color: #494b52;
+    border-color: #777a7f
+}
+
+body.dark .iknow_tm_recommendations .recommendation_author span,
+body.dark .iknow_tm_recommendations .recommendation_author small {
+    color: #d3d7df
+}
+
+body.dark .iknow_tm_recommendations .recommendation_source:hover {
+    color: #fff
+}
+
 body.dark .iknow_tm_news .news_list ul li .details .title a {
     color: #fff
 }

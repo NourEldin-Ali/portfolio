@@ -148,8 +148,24 @@ function currentLink2(ccc, e) {
     var left = e.offset().top; var width = e.outerWidth(); var menuleft = $('.iknow_tm_sidebar_2 .menu').offset().top; e.parent().removeClass('mleave'); e.parent().siblings().addClass('mleave'); ccc.css({ top: (left - menuleft) + 'px' });
 }
 function iknow_tm_scrollable() {
-    "use strict"; var WW = jQuery(window).width(); var H = jQuery(window).height(); var scrollable = jQuery('.iknow_tm_sidebar_3 .menu.scrollable'); var verMenu = jQuery('.iknow_tm_sidebar_3 .menu'); var topbar = jQuery('.iknow_tm_extra_demo .iknow_tm_topbar').outerHeight(); var image = jQuery('.iknow_tm_sidebar_3 .image').outerHeight() + 45; var footerHeight = jQuery('.iknow_tm_extra_demo .iknow_tm_copyright').outerHeight(); if (WW <= 1400) { verMenu.css({ height: H - topbar - image - footerHeight }); }
-    verMenu.css({ height: H - topbar - image - footerHeight - 90 }); if (WW <= 1400) { scrollable.each(function () { var element = jQuery(this); element.css({ height: H - topbar - image - footerHeight }).niceScroll({ touchbehavior: false, cursorwidth: 0, autohidemode: true, cursorborder: "0px solid #eee" }); }); }
-    scrollable.each(function () { var element = jQuery(this); element.css({ height: H - topbar - image - footerHeight - 90 }).niceScroll({ touchbehavior: false, cursorwidth: 0, autohidemode: true, cursorborder: "0px solid #eee" }); });
+    "use strict";
+    var WW = jQuery(window).width();
+    var H = jQuery(window).height();
+    var scrollable = jQuery('.iknow_tm_sidebar_3 .menu.scrollable');
+    var verMenu = jQuery('.iknow_tm_sidebar_3 .menu');
+    var topbar = jQuery('.iknow_tm_extra_demo .iknow_tm_topbar').outerHeight();
+    var image = jQuery('.iknow_tm_sidebar_3 .image').outerHeight() + 45;
+    var footerHeight = jQuery('.iknow_tm_extra_demo .iknow_tm_copyright').outerHeight();
+    var menuHeight = H - topbar - image - footerHeight;
+
+    if (WW > 1400) {
+        menuHeight = menuHeight - 90;
+    }
+
+    verMenu.css({ height: menuHeight });
+    scrollable.each(function () {
+        var element = jQuery(this);
+        element.css({ height: menuHeight }).niceScroll({ touchbehavior: false, cursorwidth: 0, autohidemode: true, cursorborder: "0px solid #eee" });
+    });
 }
 function iknow_tm_menu_image_animation() { "use strict"; jQuery(window).on('scroll', function () { var menu = jQuery('.iknow_tm_sidebar_3'); var WinOffset = jQuery(window).scrollTop(); if (WinOffset >= 100) { menu.addClass('animate'); } else { menu.removeClass('animate'); } }); }

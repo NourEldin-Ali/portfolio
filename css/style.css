@@ -1914,6 +1914,115 @@ body.dark .loader_line:after {
     margin-top: 5px
 }
 
+.iknow_tm_recommendations,
+.iknow_tm_recommendations .recommendations_list {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.iknow_tm_recommendations .iknow_tm_main_title {
+    margin-bottom: 50px
+}
+
+.iknow_tm_recommendations .recommendation_card {
+    width: 100%;
+    float: left;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 38px 42px;
+    box-shadow: 7px 7px 98px rgba(9, 47, 104, .07)
+}
+
+.iknow_tm_recommendations .recommendation_text {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 30px
+}
+
+.iknow_tm_recommendations .recommendation_text:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 4px;
+    height: calc(100% - 14px);
+    background-color: #ff451b;
+    border-radius: 4px
+}
+
+.iknow_tm_recommendations .recommendation_text p {
+    font-size: 20px;
+    line-height: 1.65;
+    font-style: italic;
+    color: #222
+}
+
+.iknow_tm_recommendations .recommendation_footer {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px
+}
+
+.iknow_tm_recommendations .recommendation_author {
+    display: flex;
+    align-items: center;
+    min-width: 0
+}
+
+.iknow_tm_recommendations .recommendation_avatar {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    border: 1px solid #dedede;
+    color: #ff451b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 18px
+}
+
+.iknow_tm_recommendations .recommendation_author h4 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 5px
+}
+
+.iknow_tm_recommendations .recommendation_author span,
+.iknow_tm_recommendations .recommendation_author small {
+    display: block;
+    color: #555;
+    line-height: 1.45
+}
+
+.iknow_tm_recommendations .recommendation_author small {
+    color: #888;
+    margin-top: 3px
+}
+
+.iknow_tm_recommendations .recommendation_source {
+    display: inline-block;
+    color: #ff451b;
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.iknow_tm_recommendations .recommendation_source:hover {
+    color: #000
+}
+
 
 @-webkit-keyframes wow {
     0% {
@@ -4788,7 +4897,8 @@ input[type=number] {
 
 .iknow_tm_sidebar_3 .menu ul {
     margin: 0;
-    list-style-type: none
+    list-style-type: none;
+    padding-bottom: 18px
 }
 
 .iknow_tm_sidebar_3 .menu ul li {
@@ -4796,7 +4906,7 @@ input[type=number] {
     width: 100%;
     float: left;
     position: relative;
-    padding: 14px 0
+    padding: 12px 0
 }
 
 .iknow_tm_sidebar_3 .menu ul li:before {
@@ -6050,7 +6160,7 @@ input[type=number] {
     }
 
     .iknow_tm_sidebar_3 .menu ul li {
-        padding: 5px 0
+        padding: 4px 0
     }
 
     .iknow_tm_extra_demo .iknow_tm_copyright .inner {
@@ -7133,6 +7243,19 @@ input[type=number] {
         margin: 0 10px
     }
 
+    .iknow_tm_recommendations .recommendation_card {
+        padding: 30px
+    }
+
+    .iknow_tm_recommendations .recommendation_text p {
+        font-size: 18px
+    }
+
+    .iknow_tm_recommendations .recommendation_footer {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
     .iknow_tm_news .news_list ul {
         margin: 0
     }
@@ -7288,6 +7411,41 @@ input[type=number] {
 
     .iknow_tm_testimonials .testimonials_list .details .info {
         padding-left: 12px
+    }
+
+    .iknow_tm_recommendations .recommendation_card {
+        padding: 24px 20px
+    }
+
+    .iknow_tm_recommendations .recommendation_text {
+        padding-left: 18px;
+        margin-bottom: 24px
+    }
+
+    .iknow_tm_recommendations .recommendation_text p {
+        font-size: 16px
+    }
+
+    .iknow_tm_recommendations .recommendation_author {
+        align-items: flex-start
+    }
+
+    .iknow_tm_recommendations .recommendation_avatar {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 15px;
+        margin-right: 12px
+    }
+
+    .iknow_tm_recommendations .recommendation_author h4 {
+        font-size: 17px
+    }
+
+    .iknow_tm_recommendations .recommendation_author span,
+    .iknow_tm_recommendations .recommendation_author small,
+    .iknow_tm_recommendations .recommendation_source {
+        font-size: 14px
     }
 
     .circular_progress_bar .title h3 {
