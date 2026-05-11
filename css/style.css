@@ -4893,14 +4893,33 @@ input[type=number] {
 .iknow_tm_sidebar_3 .menu {
     width: 100%;
     height: auto;
+    max-height: calc(100% - 312px);
     position: relative;
     padding: 0 48px;
     margin-top: 90px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(153, 153, 153, .75) transparent;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease
+}
+
+.iknow_tm_sidebar_3 .menu::-webkit-scrollbar {
+    width: 8px
+}
+
+.iknow_tm_sidebar_3 .menu::-webkit-scrollbar-track {
+    background: transparent
+}
+
+.iknow_tm_sidebar_3 .menu::-webkit-scrollbar-thumb {
+    background-color: rgba(153, 153, 153, .75);
+    border-radius: 6px
 }
 
 .iknow_tm_sidebar_3 .menu ul {
@@ -4994,7 +5013,28 @@ input[type=number] {
     right: 135px;
     left: 468px;
     border-radius: 15px;
-    z-index: 5
+    z-index: 5;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth
+}
+
+.iknow_tm_content_wrapper::-webkit-scrollbar {
+    width: 8px
+}
+
+.iknow_tm_content_wrapper::-webkit-scrollbar-track {
+    background: transparent
+}
+
+.iknow_tm_content_wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(153, 153, 153, .7);
+    border-radius: 6px
+}
+
+.iknow_tm_content_wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(153, 153, 153, .7) transparent
 }
 
 .iknow_tm_hero_third {
@@ -6152,7 +6192,8 @@ input[type=number] {
 
     .iknow_tm_sidebar_3 .menu {
         padding: 0 35px;
-        margin-top: 70px
+        margin-top: 70px;
+        max-height: calc(100% - 210px)
     }
 
     .iknow_tm_sidebar_3 .menu ul li .svg {
