@@ -1940,6 +1940,10 @@ body.dark .loader_line:after {
     box-shadow: 7px 7px 98px rgba(9, 47, 104, .07)
 }
 
+.iknow_tm_recommendations .recommendation_card:not(:last-child) {
+    margin-bottom: 30px
+}
+
 .iknow_tm_recommendations .recommendation_text {
     width: 100%;
     float: left;
