@@ -538,6 +538,18 @@ body.dark .loader_line:after {
     background-color: #ffb324
 }
 
+.iknow_tm_button.cv_buttons .cv_buttons_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px
+}
+
+.iknow_tm_button.cv_buttons a {
+    padding-left: 28px;
+    padding-right: 28px
+}
+
 .iknow_tm_topbar .trigger_wrapper {
     position: relative
 }
@@ -1716,7 +1728,7 @@ body.dark .loader_line:after {
 
 .iknow_tm_main_title {
     width: 100%;
-    max-width: 45%;
+    max-width: 100%;
     height: auto;
     clear: both;
     float: left
@@ -1781,6 +1793,7 @@ body.dark .loader_line:after {
 }
 
 .iknow_tm_resume .iknow_tm_main_title {
+    max-width: 100%;
     margin-bottom: 50px
 }
 
