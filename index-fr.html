@@ -217,7 +217,7 @@
                         <h3 class="name">Ali Nour Eldin</h3>
                         <p class="text">Ingénieur en IA appliquée &amp; logiciel | GenAI, agents IA &amp; automatisation intelligente | PhD en IA pour BPM</p>
                         <br>
-                        <span>Dernière mise à jour : 15/05/2026</span>
+                        <span>Dernière mise à jour : 04/06/2026</span>
                     </div>
                     <div class="iknow_tm_down_arrow">
                         <div class="down-icon white top_120">
@@ -841,6 +841,29 @@
                         <div class="recommendations_list">
                             <article class="recommendation_card">
                                 <div class="recommendation_text">
+                                    <p>I highly recommend Ali. We worked closely together on the GovX Project, where he
+                                        consistently demonstrated strong planning abilities and flawless execution. Ali
+                                        is a delivery-oriented professional who takes complete ownership of his work,
+                                        ensuring high-quality results are met on time. Beyond his dedication and
+                                        technical focus, he is an incredibly positive and easy person to collaborate
+                                        with, making him a fantastic asset to any team.</p>
+                                </div>
+                                <div class="recommendation_footer">
+                                    <div class="recommendation_author">
+                                        <div class="recommendation_avatar" aria-hidden="true">IE</div>
+                                        <div>
+                                            <h4>Imad El Anis</h4>
+                                            <span>Senior Operation Manager at SiliconCedars</span>
+                                            <small>A directement encadré Ali</small>
+                                            <small>Recommandation LinkedIn, 1 juin 2026</small>
+                                        </div>
+                                    </div>
+                                    <a class="recommendation_source" href="https://www.linkedin.com/in/noureldin-ali/"
+                                        target="_blank" rel="noopener noreferrer">Recommandation LinkedIn</a>
+                                </div>
+                            </article>
+                            <article class="recommendation_card">
+                                <div class="recommendation_text">
                                     <p>I had the opportunity to supervise and work closely with Ali over several years
                                         in both research and collaborative project environments. Throughout this period,
                                         Ali consistently demonstrated a strong balance between research thinking and
@@ -972,6 +995,199 @@
                         </div>
                         <div class="portfolio_list">
                             <ul class="gallery_zoom">
+                                <li class="work">
+                                    <div class="list_inner">
+                                        <div class="image">
+                                            <img src="img/thumbs/1-1.jpg" alt />
+                                            <div class="main"
+                                                data-img-url="img/portfolio/tpra-question-answering.png"></div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="details">
+                                            <h3>TPRA - Réponse aux questions</h3>
+                                        </div>
+                                        <a class="iknow_tm_full_link portfolio_popup" href="#"></a>
+                                        <div class="hidden_content">
+                                            <div class="popup_details">
+                                                <div class="description">
+                                                    <p>
+                                                        Dans le processus TPRA, les fournisseurs reçoivent des
+                                                        questionnaires sécurité provenant de différentes organisations.
+                                                        Même lorsque les questions reposent sur les mêmes standards de
+                                                        cybersécurité, elles sont formulées différemment et doivent
+                                                        être répondues à partir de la documentation sécurité existante
+                                                        du fournisseur.
+                                                    </p>
+                                                    <p>
+                                                        La principale limite est le temps consommé par la lecture
+                                                        manuelle des documents, la recherche des preuves pertinentes et
+                                                        la reformulation des réponses pour chaque questionnaire. Cela
+                                                        devient plus difficile lorsque la documentation est incomplète,
+                                                        ambiguë, contradictoire ou répartie dans plusieurs fichiers.
+                                                    </p>
+                                                    <p>
+                                                        J'ai implémenté une méthode de retrieval avec reranking
+                                                        pour améliorer la sélection des preuves avant de les transmettre
+                                                        au LLM. Le pipeline combine la recherche vectorielle et le
+                                                        reranking afin de fournir au modèle des passages plus pertinents
+                                                        et de générer des réponses ancrées dans la documentation
+                                                        existante.
+                                                    </p>
+                                                    <p>
+                                                        Je travaille aussi à optimiser cette approche avec GraphRAG.
+                                                        J'ai conçu une solution GraphRAG multi-agent avec un agent de
+                                                        schéma, un agent d'extraction et un agent QA sur graphe de
+                                                        connaissances. Le système extrait les entités depuis les
+                                                        documents, les enrichit, construit les relations, récupère les
+                                                        citations pertinentes et utilise ces références pour répondre à
+                                                        chaque slot TPRA. Le backend combine Neo4j pour le graphe de
+                                                        connaissances, ChromaDB pour la recherche vectorielle et
+                                                        LangChain/LangGraph pour l'orchestration LLM et l'évaluation.
+                                                    </p>
+                                                    <br>
+                                                    <p>
+                                                        <strong>Technologies :</strong> Python, LangChain, LangGraph,
+                                                        LangSmith, Neo4j, ChromaDB, Docker, modèles OpenAI/NVIDIA/Groq,
+                                                        GraphRAG, recherche hybride, QA cybersécurité.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="work">
+                                    <div class="list_inner">
+                                        <div class="image">
+                                            <img src="img/thumbs/1-1.jpg" alt />
+                                            <div class="main" data-img-url="img/portfolio/govX.png"></div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="details">
+                                            <h3>GovX - Services publics numériques</h3>
+                                        </div>
+                                        <a class="iknow_tm_full_link portfolio_popup" href="#"></a>
+                                        <div class="hidden_content">
+                                            <div class="popup_details">
+                                                <div class="description">
+                                                    <p>
+                                                        GovX est une initiative Lebanon Works orientée vers la création
+                                                        d'un hub national de coordination pour la gouvernance numérique,
+                                                        des services publics plus intelligents et des institutions plus
+                                                        fortes. Le projet rassemble des acteurs publics, des
+                                                        collaborateurs du secteur privé et des partenaires
+                                                        technologiques pour accélérer la livraison de services
+                                                        gouvernementaux appuyés par l'IA au Liban.
+                                                    </p>
+                                                    <p>
+                                                        Ma contribution a été réalisée avec SiliconCedars, l'un des
+                                                        collaborateurs du projet. J'ai travaillé sur la base technique
+                                                        d'un concept d'AI Factory capable d'aider à concevoir, générer,
+                                                        valider et déployer des services publics numériques à partir
+                                                        d'exigences de processus structurées.
+                                                    </p>
+                                                    <p>
+                                                        J'ai développé un pipeline LLM agentique qui transforme des
+                                                        descriptions de processus en logique de workflow et en
+                                                        propositions de schémas de base de données. Le système inclut la
+                                                        génération, la validation, la revue human-in-the-loop, la gestion
+                                                        d'état et de mémoire, ainsi que l'appel d'outils/API pour que
+                                                        l'agent puisse assembler les étapes d'implémentation plutôt que
+                                                        produire seulement du texte statique.
+                                                    </p>
+                                                    <p>
+                                                        J'ai aussi construit le backend et la stack de déploiement
+                                                        autour de Spring Boot et Flowable, avec des REST APIs pour
+                                                        l'orchestration de services, les intégrations, les notifications
+                                                        et les flux liés au paiement. La livraison utilisait Docker,
+                                                        GitHub Actions CI/CD et des pratiques de déploiement Azure,
+                                                        avec documentation technique et démonstrations pour les parties
+                                                        prenantes.
+                                                    </p>
+                                                    <br>
+                                                    <p>
+                                                        <strong>Technologies :</strong> LangGraph, LangChain, LLMs,
+                                                        workflows agentiques, validation human-in-the-loop, Spring Boot,
+                                                        Flowable, REST APIs, Docker, GitHub Actions, Azure,
+                                                        orchestration de services, AI Factory.
+                                                    </p>
+                                                    <p>
+                                                        <strong>Référence :</strong>
+                                                        <a href="https://lebanonworks.net/hubs/govx-building-a-digital-nation-smarter-services-stronger-institutions"
+                                                            target="_blank" rel="noopener noreferrer">GovX sur Lebanon
+                                                            Works</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="work">
+                                    <div class="list_inner">
+                                        <div class="image">
+                                            <img src="img/thumbs/1-1.jpg" alt />
+                                            <div class="main"
+                                                data-img-url="img/portfolio/tpra-question-generation.png"></div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="details">
+                                            <h3>TPRA - Génération de questions</h3>
+                                        </div>
+                                        <a class="iknow_tm_full_link portfolio_popup" href="#"></a>
+                                        <div class="hidden_content">
+                                            <div class="popup_details">
+                                                <div class="description">
+                                                    <p>
+                                                        Dans le third-party risk assessment, les organisations doivent
+                                                        évaluer la posture cybersécurité de fournisseurs qui fournissent
+                                                        des services, manipulent des données sensibles ou supportent des
+                                                        systèmes critiques. Les questions sont généralement dérivées de
+                                                        standards comme ISO, NIST, NIS2 et SOC.
+                                                    </p>
+                                                    <p>
+                                                        La limite est que la génération de questions n'est pas une
+                                                        simple correspondance entre un standard et un questionnaire.
+                                                        Chaque fournisseur possède ses propres services, outils,
+                                                        responsabilités et expositions au risque. Les questions
+                                                        génériques manquent de contexte, tandis que l'adaptation
+                                                        manuelle est longue et ne fournit pas une manière standard de
+                                                        poser ou générer des questions cohérentes.
+                                                    </p>
+                                                    <p>
+                                                        J'ai travaillé sur un pipeline IA qui organise le référentiel de
+                                                        questions avec des labels réutilisables avant la génération ou
+                                                        la sélection des questions. Au lieu de dépendre uniquement d'une
+                                                        recherche sémantique sur le texte brut des questions, le système
+                                                        récupère les questions via une couche de labels qui représente
+                                                        le domaine du contrôle, l'intention d'évaluation et le
+                                                        périmètre. Le résultat est plus prévisible pour les équipes
+                                                        cybersécurité et plus facile à auditer.
+                                                    </p>
+                                                    <p>
+                                                        La conception technique utilise les LLM de manière sélective
+                                                        pour créer et normaliser les labels, puis réutilise ces labels
+                                                        dans le référentiel grâce au clustering et à une propagation par
+                                                        kNN. Cela réduit les appels répétés aux LLM, diminue le coût
+                                                        d'inférence et garde la sélection des questions cohérente quand
+                                                        le référentiel grandit. Les questionnaires générés sont
+                                                        contextualisés par fournisseur, alignés avec les contrôles
+                                                        d'origine et plus simples à maintenir comme fonctionnalité
+                                                        produit.
+                                                    </p>
+                                                    <br>
+                                                    <p>
+                                                        <strong>Technologies :</strong> Python, Large Language Models
+                                                        (LLMs), retrieval par labels, semantic labeling, clustering
+                                                        d'embeddings, propagation kNN des labels, prompt engineering,
+                                                        standards de cybersécurité, TPRA/TPRM.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
                                 <li class="personal">
                                     <div class="list_inner">
                                         <div class="image">

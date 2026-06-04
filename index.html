@@ -225,7 +225,7 @@
                             </div>
                         </div>
                         <br>
-                        <span>Last update: 15/05/2026</span>
+                        <span>Last update: 04/06/2026</span>
                     </div>
                     <div class="iknow_tm_down_arrow">
                         <div class="down-icon white top_120">
@@ -826,6 +826,29 @@
                         <div class="recommendations_list">
                             <article class="recommendation_card">
                                 <div class="recommendation_text">
+                                    <p>I highly recommend Ali. We worked closely together on the GovX Project, where he
+                                        consistently demonstrated strong planning abilities and flawless execution. Ali
+                                        is a delivery-oriented professional who takes complete ownership of his work,
+                                        ensuring high-quality results are met on time. Beyond his dedication and
+                                        technical focus, he is an incredibly positive and easy person to collaborate
+                                        with, making him a fantastic asset to any team.</p>
+                                </div>
+                                <div class="recommendation_footer">
+                                    <div class="recommendation_author">
+                                        <div class="recommendation_avatar" aria-hidden="true">IE</div>
+                                        <div>
+                                            <h4>Imad El Anis</h4>
+                                            <span>Senior Operation Manager at SiliconCedars</span>
+                                            <small>Managed Ali directly</small>
+                                            <small>Recommended on LinkedIn, June 1, 2026</small>
+                                        </div>
+                                    </div>
+                                    <a class="recommendation_source" href="https://www.linkedin.com/in/noureldin-ali/"
+                                        target="_blank" rel="noopener noreferrer">LinkedIn recommendation</a>
+                                </div>
+                            </article>
+                            <article class="recommendation_card">
+                                <div class="recommendation_text">
                                     <p>I had the opportunity to supervise and work closely with Ali over several years
                                         in both research and collaborative project environments. Throughout this period,
                                         Ali consistently demonstrated a strong balance between research thinking and
@@ -956,6 +979,189 @@
                         </div>
                         <div class="portfolio_list">
                             <ul class="gallery_zoom">
+                                <li class="work">
+                                    <div class="list_inner">
+                                        <div class="image">
+                                            <img src="img/thumbs/1-1.jpg" alt />
+                                            <div class="main"
+                                                data-img-url="img/portfolio/tpra-question-answering.png"></div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="details">
+                                            <h3>TPRA Question Answering</h3>
+                                        </div>
+                                        <a class="iknow_tm_full_link portfolio_popup" href="#"></a>
+                                        <div class="hidden_content">
+                                            <div class="popup_details">
+                                                <div class="description">
+                                                    <p>
+                                                        In the TPRA process, suppliers receive security questionnaires
+                                                        from different organizations. Even when the questions are based
+                                                        on the same cybersecurity standards, they are written
+                                                        differently and still need to be answered using the supplier's
+                                                        existing security documentation.
+                                                    </p>
+                                                    <p>
+                                                        The main limitation is the time consumed by manually reading
+                                                        documents, finding the relevant evidence, and rewriting answers
+                                                        for each questionnaire. This becomes harder when the
+                                                        documentation is incomplete, ambiguous, contradictory, or spread
+                                                        across many files.
+                                                    </p>
+                                                    <p>
+                                                        I implemented a rerank-based retrieval method to improve the
+                                                        selection of evidence before sending it to the LLM. The pipeline
+                                                        combines vector retrieval with reranking so the model receives
+                                                        more relevant document chunks and can generate answers grounded
+                                                        in the existing documentation.
+                                                    </p>
+                                                    <p>
+                                                        I am also optimizing this approach with GraphRAG. I designed
+                                                        a multi-agent GraphRAG solution with a schema agent, an
+                                                        extraction agent, and a knowledge-graph QA agent. The system
+                                                        extracts entities from the documents, enriches them, builds
+                                                        relations, retrieves relevant quotes, and uses those references
+                                                        to answer each TPRA slot. The backend combines Neo4j for the
+                                                        knowledge graph, ChromaDB for vector retrieval, and
+                                                        LangChain/LangGraph for LLM orchestration and evaluation.
+                                                    </p>
+                                                    <br>
+                                                    <p>
+                                                        <strong>Technologies:</strong> Python, LangChain, LangGraph,
+                                                        LangSmith, Neo4j, ChromaDB, Docker, OpenAI/NVIDIA/Groq models,
+                                                        GraphRAG, hybrid retrieval, cybersecurity QA.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="work">
+                                    <div class="list_inner">
+                                        <div class="image">
+                                            <img src="img/thumbs/1-1.jpg" alt />
+                                            <div class="main" data-img-url="img/portfolio/govX.png"></div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="details">
+                                            <h3>GovX - Digital Government Services</h3>
+                                        </div>
+                                        <a class="iknow_tm_full_link portfolio_popup" href="#"></a>
+                                        <div class="hidden_content">
+                                            <div class="popup_details">
+                                                <div class="description">
+                                                    <p>
+                                                        GovX is a Lebanon Works initiative focused on building a
+                                                        national coordination hub for digital governance, smarter public
+                                                        services, and stronger institutions. The project brings together
+                                                        public-sector actors, private-sector collaborators, and
+                                                        technology partners to accelerate AI-enabled government service
+                                                        delivery in Lebanon.
+                                                    </p>
+                                                    <p>
+                                                        My contribution was delivered through SiliconCedars, one of the
+                                                        project collaborators. I worked on the technical foundation for
+                                                        an AI Factory concept that can help design, generate, validate,
+                                                        and deploy digital government services from structured process
+                                                        requirements.
+                                                    </p>
+                                                    <p>
+                                                        I developed an agentic LLM pipeline that translates process
+                                                        descriptions into workflow logic and database schema proposals.
+                                                        The system includes generation, validation,
+                                                        human-in-the-loop review, state and memory management, and
+                                                        tool/API calling so the agent can assemble implementation steps
+                                                        instead of only producing static text.
+                                                    </p>
+                                                    <p>
+                                                        I also built the backend and deployment stack around Spring
+                                                        Boot and Flowable, exposing REST APIs for service orchestration,
+                                                        integrations, notifications, and payment-related flows. The
+                                                        delivery setup used Docker, GitHub Actions CI/CD, and Azure
+                                                        deployment practices, with technical documentation and demos for
+                                                        stakeholders.
+                                                    </p>
+                                                    <br>
+                                                    <p>
+                                                        <strong>Technologies:</strong> LangGraph, LangChain, LLMs,
+                                                        agentic workflows, human-in-the-loop validation, Spring Boot,
+                                                        Flowable, REST APIs, Docker, GitHub Actions, Azure, service
+                                                        orchestration, AI Factory.
+                                                    </p>
+                                                    <p>
+                                                        <strong>Reference:</strong>
+                                                        <a href="https://lebanonworks.net/hubs/govx-building-a-digital-nation-smarter-services-stronger-institutions"
+                                                            target="_blank" rel="noopener noreferrer">GovX on Lebanon
+                                                            Works</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="work">
+                                    <div class="list_inner">
+                                        <div class="image">
+                                            <img src="img/thumbs/1-1.jpg" alt />
+                                            <div class="main"
+                                                data-img-url="img/portfolio/tpra-question-generation.png"></div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="details">
+                                            <h3>TPRA Question Generation</h3>
+                                        </div>
+                                        <a class="iknow_tm_full_link portfolio_popup" href="#"></a>
+                                        <div class="hidden_content">
+                                            <div class="popup_details">
+                                                <div class="description">
+                                                    <p>
+                                                        In third-party risk assessment, organizations need to evaluate
+                                                        the cybersecurity posture of suppliers that provide services,
+                                                        handle sensitive data, or support critical systems. The
+                                                        questions are usually derived from standards such as ISO, NIST,
+                                                        NIS2, and SOC.
+                                                    </p>
+                                                    <p>
+                                                        The limitation is that question generation is not a simple
+                                                        one-to-one mapping from a standard to a questionnaire. Each
+                                                        supplier has its own services, tools, responsibilities, and risk
+                                                        exposure. Generic questions miss important context, while manual
+                                                        adaptation is time-consuming and does not provide a standard way
+                                                        to ask or generate consistent questions.
+                                                    </p>
+                                                    <p>
+                                                        I worked on an AI pipeline that organizes the question
+                                                        repository with reusable labels before generating or selecting
+                                                        questions. Instead of relying only on semantic search over raw
+                                                        question text, the system retrieves questions through a
+                                                        label-based layer that captures control domain, assessment
+                                                        intent, and evaluation scope. This makes the retrieval more
+                                                        predictable for cybersecurity teams and easier to audit.
+                                                    </p>
+                                                    <p>
+                                                        The engineering design uses LLMs selectively to create and
+                                                        normalize labels, then reuses those labels across the repository
+                                                        with clustering and kNN-based propagation. This reduces repeated
+                                                        LLM calls, lowers inference cost, and keeps question selection
+                                                        consistent when the repository grows. The generated
+                                                        questionnaires are supplier-aware, aligned with the original
+                                                        controls, and easier to maintain as a product feature.
+                                                    </p>
+                                                    <br>
+                                                    <p>
+                                                        <strong>Technologies:</strong> Python, Large Language Models
+                                                        (LLMs), label-based retrieval, semantic labeling, embedding
+                                                        clustering, kNN label propagation, prompt engineering,
+                                                        cybersecurity standards, TPRA/TPRM.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
                                 <li class="personal">
                                     <div class="list_inner">
                                         <div class="image">
