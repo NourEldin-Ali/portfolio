@@ -1899,6 +1899,50 @@ body.dark .loader_line:after {
     min-width: 0
 }
 
+.iknow_tm_resume .info_list ul li.experience_company > .short {
+    float: none;
+    margin-bottom: 20px
+}
+
+.iknow_tm_resume .experience_positions {
+    margin-left: 12px;
+    padding-left: 24px
+}
+
+.iknow_tm_resume .info_list ul li .experience_position {
+    box-sizing: border-box;
+    display: flow-root;
+    float: none;
+    position: relative;
+    width: 100%;
+    padding-bottom: 25px
+}
+
+.iknow_tm_resume .experience_position:last-child {
+    padding-bottom: 0
+}
+
+.iknow_tm_resume .experience_position::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -31px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff451b
+}
+
+.iknow_tm_resume .experience_position .short {
+    align-items: flex-start
+}
+
+.iknow_tm_resume .experience_position .job h4 {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    overflow-wrap: anywhere
+}
 
 
 .iknow_tm_resume .info_list ul li .short .job h3 {
@@ -2156,6 +2200,30 @@ body.dark .loader_line:after {
     position: relative
 }
 
+.iknow_tm_portfolio .portfolio_list ul li.gabbi_text_only .list_inner {
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-left: 4px solid #ff451b;
+    border-radius: 8px;
+    background-color: #f3f4f6
+}
+
+.iknow_tm_portfolio .portfolio_list ul li.gabbi_text_only .details {
+    position: static;
+    padding: 0;
+    opacity: 1;
+    visibility: visible
+}
+
+.iknow_tm_portfolio .portfolio_list ul li.gabbi_text_only .details h3 {
+    color: #222
+}
+
 .iknow_tm_portfolio .portfolio_list ul li .list_inner .image {
     position: relative
 }
@@ -2311,6 +2379,14 @@ body.dark .loader_line:after {
     transition: all .3s ease
 }
 
+.iknow_tm_modalbox.no_image_popup .box_inner {
+    top: 50%;
+    bottom: auto;
+    height: auto;
+    max-height: calc(100vh - 52px);
+    transform: translate(-50%, -50%)
+}
+
 .iknow_tm_modalbox.opened .box_inner {
     opacity: 1;
     visibility: visible;
@@ -2341,6 +2417,13 @@ body.dark .loader_line:after {
     overflow: hidden;
     padding: 50px;
     overflow-y: scroll
+}
+
+.iknow_tm_modalbox.no_image_popup .description_wrap {
+    box-sizing: border-box;
+    height: auto;
+    max-height: calc(100vh - 52px);
+    overflow-y: auto
 }
 
 .iknow_tm_modalbox .description_wrap::-webkit-scrollbar,
